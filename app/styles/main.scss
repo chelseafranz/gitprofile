@@ -3,24 +3,199 @@
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
 // Custom Styles
-body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+$ltgray: HSLA(0, 0%, 96%, 1);
+$border: HSLA(0, 0%, 90%, 1);
+$searchfont:HSLA(0, 0%, 66%, 1);
+$icon: HSLA(0, 0%, 80%, 1);
+$blue: HSLA(210, 53%, 51%, 1);
+@mixin font{
+  font-size: .8em;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 600px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+header{
+  background-color: $ltgray;
+  height: 48px;
+  width: 100%;
+  border-bottom-color: HSLA(0, 0%, 90%, 1);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.head_left{
+  float: left;
+  margin-top: 10px;
+
+  .mega-octicon{
+    margin-left: 222px;
+
   }
+}
+.top_search{
+  margin-left: 260px;
+  display: block;
+  margin-top: -31px;
+}
+
+input{
+  color:$searchfont;
+  border-radius: 3px;
+  height: 28px;
+  width:360px;
+  font-size: .8em;
+  font-family: sans-serif;
+  @include font;
+}
+.head_right{
+  float: right;
+  @include font;
+  margin-right: 119px;
+margin-top: -16px;
+/*   margin-right: 171px;
+margin-top: -4px; */
+
+}
+
+/* .little_me{
+  border-radius: 3px;
+  height: 30px;
+  width: 30px;
+  margin-top: -45px;
+  float:left;
+} */
+.two_icons{
+  margin-right: 10px;
+}
+.regular{
+  margin-right: 10px;
+}
+.top_nav{
+  font-family: sans-serif;
+  font-size: .8em;
+  font-weight: bold;
+  padding-top: 15px;
+}
+.explore{
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+aside{
+  width: 225px;
+  height: 620px;
+  margin-left:150px;
+  margin-top: 70px;
+
+  img{
+    height: 230px;
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+hr{
+
+}
+h1{
+  font-family: sans-serif;
+  margin-top: 0;
+  font-weight: 500;
+}
+h2{
+  font-weight: 100;
+  margin-top: -24px;
+}
+.location {
+  font-weight: 200;
+  font-size: .9em;
+  font-family: 'Helvetica';
+  color: HSLA(0, 0%, 20%, 1);
+}
+.mail{
+  font-weight: 200;
+  font-size: .9em;
+  font-family: 'Helvetica';
+  color: HSLA(0, 0%, 20%, 1);
+  
+}
+.joined{
+  font-weight: 200;
+  font-size: .9em;
+  font-family: 'Helvetica';
+  color: HSLA(0, 0%, 20%, 1);
+}
+
+.octicon-location{
+  color: $icon;
+}
+.octicon-mail{
+  color: $icon;
+}
+.octicon-clock{
+  color: $icon;
+}
+
+.zero{
+  color: $blue;
+  list-style-type: none;
+  margin-bottom: 0px;
+}
+li{
+  display: inline-block;
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-right: 43px;
+}
+.a{
+  margin-left: -9px;
+}
+.b{
+  margin-left: 8px;
+}
+.c{
+  margin-left: 2px;
+}
+.follow{
+  font-size: .8em;
+  color: $searchfont;
+  margin-right: 10px;
+  width: 30px;
+  margin-left: 11px;
+}
+
+.org{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.tiy{
+  height:40px;
+  width:40px;
+}
+footer{
+
+  color: $searchfont;
+}
+.foot{
+  border-top: solid 1px HSLA(0, 0%, 93%, 1);
+  width: 987px;
+  margin: 0 auto;
+  height: 90px;
+  padding-top: 37px;
+  position: relative;
+}
+.foot_icon{
+  width: 32px;
+  display: block;
+  margin: 50px;
+  margin-top: 0px;
+  position: absolute;
+  top: 29px;
+  right: 434px;
+}
+.bottom_left{
+  margin-top: 25px;
+  font-size: .75em;
+}
+.bottom_right{
+  float: right;
+  font-size: .75em;
 }
