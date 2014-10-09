@@ -10,7 +10,7 @@ $icon: HSLA(0, 0%, 80%, 1);
 $blue: HSLA(210, 53%, 51%, 1);
 @mixin font{
   font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: bold;
+
 
 }
 
@@ -18,8 +18,8 @@ body{
   font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-
-header{
+/* header section*/////////////////////////////////
+ header{
   background-color: $ltgray;
   height: 48px;
   width: 100%;
@@ -32,14 +32,16 @@ header{
   margin-top: 10px;
 
   .mega-octicon{
-    margin-left: 222px;
-
+    margin-left: 147px;
+    font-size: 28px;
   }
 }
 .top_search{
-  margin-left: 260px;
+  margin-left: 187px;
+  height: 28px;
+  width: 360px;
   display: block;
-  margin-top: -31px;
+  margin-top: -27px;
 }
 
 input{
@@ -53,55 +55,72 @@ input{
 .head_right{
   float: right;
   @include font;
-  margin-right: 119px;
-margin-top: -16px;
-/*   margin-right: 171px;
-margin-top: -4px; */
+  margin-right: 147px;
+margin-top: 15px;
+
+position: relative;
 
 }
 
-/* .little_me{
+.little_me{
   border-radius: 3px;
-  height: 30px;
-  width: 30px;
-  margin-top: -45px;
+  height: 22px;
+  width: 22px;
+  margin-top: -41px;
   float:left;
-} */
+  position: absolute;
+  top: 39px;
+  right: 215px;
+}
+.username{
+  font-size: .8em;
+  font-weight: bold;
+}
 .two_icons{
   margin-right: 1px;
 }
 .regular{
   margin-right: 10px;
   margin-left: 5px;
+  font-size: 7px;
 }
 .top_nav{
   font-size: .8em;
   font-weight: bold;
   padding-top: 15px;
+  width: 200px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 .explore{
-  margin-right: 0px;
+  margin-right: 2px;
   margin-left: 10px;
+  color: HSLA(0, 0%, 20%, 1);
 }
+/* end of header section */////////////////////////
 
+/* sidebar *///////////////////////////////////////
 aside{
   width: 225px;
   height: 620px;
   float: left;
   margin-top: 20px;
-  margin-left: 130px;
+  margin-left: 150px;
   clear: right;
   @include font;
 
-  img{
+  .me{
     height: 230px;
     width: 100%;
     border-radius: 5px;
   }
 }
+
 hr{
 
 }
+
 h1{
   margin-top: 0;
   font-weight: 500;
@@ -174,12 +193,12 @@ li{
   height:40px;
   width:40px;
 }
-
+/* main body section */////////////////////////////
 .main{
   width: 740px;
   height: 1000px;
   float: right;
-  margin-right: 130px;
+  margin-right: 148px;
   margin-top: 20px;
 }
 
@@ -190,22 +209,37 @@ li{
 .b1{
   border-bottom: solid 1px $border;
   padding: 8px;
+  padding-right: 15px;
+padding-left: 10px;
   color: HSLA(0, 0%, 40%, 1);
+  width: 136px;
+  font-size: smaller;
+
 }
+
 .b2{
   border: solid 1px $border;
   border-bottom: none;
   padding: 8px;
-  color: HSLA(0, 0%, 40%, 1);
+  padding-right: 15px;
+padding-left: 10px;
+  color: black;
+  width: 136px;
+  font-size: smaller;
+
 }
 .b3{
   border-bottom: solid 1px $border;
   padding: 8px;
+  padding-right: 15px;
+padding-left: 10px;
   color: HSLA(0, 0%, 40%, 1);
+  width: 136px;
+  font-size: smaller;
 
 }
 .public{
-  margin-right: 231px;
+  margin-right: 293px;
 }
 
 .edit_profile{
@@ -243,8 +277,8 @@ li{
 }
 
 .search1{
-  height: 35px;
-  width: 70px;
+  height: 34px;
+  width: 69px;
   border-radius: 3px;
   border: solid 1px $border;
   background-color: HSLA(0, 0%, 98%, 1);
@@ -288,6 +322,7 @@ li{
   font-weight: bold;
   margin-top: -41px;
 }
+/* end of main body section *//////////////////////
 ///////////////////////////////////////////////////
 footer{
   @include font;
