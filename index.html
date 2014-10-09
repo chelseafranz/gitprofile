@@ -8,37 +8,238 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <link rel="stylesheet" href="styles/vendor.css">
-
+  <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css">
     <link rel="stylesheet" href="styles/main.css">
 
     <script src="scripts/vendor/modernizr.js"></script>
   </head>
   <body>
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Normalize CSS</li>
-
-        <li>Sass</li>
-
-
-        <li>Modernizr</li>
-
-
-        <li>Bourbon & Neat</li>
-
-
-        <li>UnderscoreJS</li>
-
-      </ul>
-      <p>Don't forget to update your readme file!!</p>
+<!-- header -->
+<header class="head">
+  <div class="head_left">
+    <span class="mega-octicon octicon-mark-github"></span>
+    <input class="top_search" type="text" value="Search GitHub">
+    </div>
+      <div class="top_nav">
+      <span class="explore">Explore</span>
+      <span class="explore">Gist</span>
+      <span class="explore">Blog</span>
+      <span class="explore">Help</span>
     </div>
 
-    <script src="scripts/vendor.js"></script>
+  <div class="head_right">
+    <!-- <img class="little_me" src="https://s3.amazonaws.com/uploads.hipchat.com/31349/1240363/w7PlM8eDurZEBbk/upload.png" > -->
 
+      <!-- <span class="username">chelseafranz</span> -->
+  <span class="two_icons">
+      <span class="octicon octicon-plus"></span></span>
+      <span class="two_icons">
+      <span class="octicon octicon-triangle-down"></span></span>
+      <span class="regular">
+      <span class="octicon octicon-inbox"></span></span>
+      <span class="regular">
+      <span class="octicon octicon-gear"></span></span>
+      <span class="regular">
+      <span class="octicon octicon-sign-out"></span>
+    </span>
+
+  </div>
+</header>
+
+<!-- end of header -->
+
+<!-- start of sidebar -->
+<aside class="sidebar">
+  <!-- <img class="me" src="https://s3.amazonaws.com/uploads.hipchat.com/31349/1240363/w7PlM8eDurZEBbk/upload.png" > -->
+  <!-- <h1 class="name">Chelsea Franz</h1> -->
+  <!-- <h2 class="login">chelseafranz</h2> -->
+  <hr></hr>
+<div>
+  <span class="octicon octicon-location"></span>
+  <!-- <span class="location">United States</span> -->
+</div>
+<div>
+  <span class="octicon octicon-mail"></span>
+  <a href='chelseafranz.com'>
+  <!-- <span class="mail">chelseafranz3@gmail.com</span> -->
+</a>
+</div>
+<div>
+  <span class="octicon octicon-clock"></span>
+  <!-- <span class="joined">Joined on September 22, 2014</span> -->
+</div>
+<hr></hr>
+  <!-- <ul class="zero"> -->
+    <!-- <li class="a">0</li>
+    <li class="b">0</li>
+    <li class="c">0</li> -->
+  </ul>
+
+  <span class="followers">
+    <span class="follow">Followers</span>
+    <span class="follow">Starred</span>
+    <span class="follow">Following</span>
+  </span>
+<hr></hr>
+
+<div class="org">Organizations</div>
+<img class="tiy" src="https://avatars0.githubusercontent.com/u/7996991?v=2&s=200">
+
+</aside>
+<!-- end of sidebar -->
+
+<!-- main body section -->
+<section class="main">
+  <!-- top half -->
+  <div class="top_half">
+    <span class="b1">
+      <span class="octicon octicon-plus"></span>
+      <span class="contributions">Contributions</span>
+    </span>
+    <span class="b2">
+      <span class="octicon octicon-repo"></span>
+      <span class="repositories">Repositories</span>
+    </span>
+
+    <span class="b3">
+      <span class="octicon octicon-rss"></span>
+      <span class="public">Public Activity</span>
+      <button class="edit_profile">
+        <span class="octicon octicon-pencil"></span>
+        Edit Profile
+      </button>
+    </span>
+  </div>
+  <!-- end of top half -->
+
+  <!-- bottom half -->
+<div class="bottom_half">
+  <input class="bottom_search" type="text" value="Find a repository...">
+  <button class="search1">Search</button>
+  <span class="things">
+     <span class="all">All</span>
+     <span class="items">Public</span>
+     <span class="items">Private</span>
+     <span class="items">Sources</span>
+     <span class="items">Forks</span>
+     <span class="items">Mirrors</span>
+     <button class="search2"><span class="octicon octicon-repo"></span>
+     New</button>
+  </span>
+</div>
+<!-- end of bottom haf of body top -->
+
+<!-- beginning of projects section -->
+<section class="bars">
+  <div class="projectName">gitprofile</div>
+  <div class="update">Updated 19 hours ago</div>
+
+  <span class="right">Javascript
+    <span class="octicon octicon-star">
+      0
+      <span class="octicon octicon-git-branch">
+        0
+      </span>
+
+
+  </span>
+</span>
+</section>
+
+<section class="bars">
+  <div class="projectName">etsy</div>
+  <div class="update">Updated 19 hours ago</div>
+</section>
+
+<section class="bars">
+  <div class="projectName">accord</div>
+  <div class="update">Updated 2 days ago</div>
+</section>
+
+<section class="bars">
+  <div class="projectName">jspractice</div>
+  <div class="update">Updated 3 days ago</div>
+</section>
+
+<section class="bars">
+  <div class="projectName">javascript</div>
+  <div class="update">Updated 1 week ago</div>
+</section>
+
+<section class="bars">
+  <div class="projectName">surf-and-paddle</div>
+  <div class="update">Updated 1 week ago</div>
+</section>
+
+</section>
+
+<!-- javascript templates -->
+<!-- top box -->
+<script type="text/template" id="top_box">
+  <img class="little_me" src= "<%= avatar_url %>" />
+  <span class="username"><%= login %></span>
+</script>
+
+
+<!-- side bar -->
+<script type="text/template" id="side_box">
+  <img class="me" src= "<%= avatar_url %>" />
+  <h1 class="name"><%= name %></h1>
+  <h2 class="login"> <%= login %> </h2>
+  <span class="location">United States</span>
+  <span class="mail"><%= email %></span>
+  <span class="joined">Joined on September 22, 2014</span>
+
+
+  <li class="a"><%= followers %></li>
+  <li class="b"><%= public_gists %></li>
+  <li class="c"><%= following %></li>
+
+
+</script>
+
+
+
+
+
+
+
+<!--   javascript templates -->
+
+
+  <!-- end of body section-->
+
+
+    <script src="scripts/vendor.js"></script>
+<script src="scripts/token.js"></script>
         <script src="scripts/main.js"></script>
 </body>
+
+<footer>
+    <div class="foot">
+      <span class="bottom_left">
+        <span>© 2014 GitHub, Inc.</span>
+        <span class="l">Terms</span>
+        <span class="l">Privacy</span>
+        <span class="l">Secutity</span>
+        <span class="l">Contact</span>
+      </span>
+
+
+
+      <span class="bottom_right">
+        <span class="r">Status</span>
+        <span class="r">API</span>
+        <span class="r">Training</span>
+        <span class="r">Shop</span>
+        <span class="r">Blog</span>
+        <span class="r">About</span>
+      </span>
+<span class="foot_icon">
+  <span class="mega-octicon octicon-mark-github"></span>
+</span>
+
+    </div>
+</footer>
 </html>
