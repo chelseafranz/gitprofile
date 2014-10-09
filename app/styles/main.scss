@@ -162,7 +162,8 @@ li{
   color: $searchfont;
   margin-right: 10px;
   width: 30px;
-  margin-left: 11px;
+  margin-left: 7px;
+  font-weight: 200px;
 }
 
 .org{
@@ -184,8 +185,8 @@ li{
 
 .top_half{
   height: 35px;
-  font-weight: 200;
 }
+
 .b1{
   border-bottom: solid 1px $border;
   padding: 8px;
@@ -218,8 +219,7 @@ li{
 }
 
 .bottom_half{
-border-bottom: solid 1px $border;
-padding: 5px;
+  padding: 5px;
 }
 
 .items{
@@ -257,9 +257,38 @@ padding: 5px;
   background-color: HSLA(104, 51%, 57%, 1);
   font-size: 12px;
   color: white;
+}
+/* repo display *//////////////////////////////////
+.bars{
+  height: 135px;
+  width: 745px;
+  border-top: solid 1px $border;
+}
+.projectName{
+  color: $blue;
+  font-weight: 600;
+  font-size: 20px;
+  width: 300px;
+  display: inline-block;
+  margin-top: 50px;
 
 }
 
+.update{
+  color: gray;
+  width: 300px;
+
+
+}
+.right{
+  float: right;
+  color: gray;
+  font-size: .8em;
+  padding: 5px;
+  font-weight: bold;
+  margin-top: -41px;
+}
+///////////////////////////////////////////////////
 footer{
   @include font;
   color: $searchfont;
