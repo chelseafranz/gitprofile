@@ -36,12 +36,12 @@ i.forEach(function(x){
 });
 
 
-var template4= $('#    ').html();
+var template4= $('#repo').html();
 var rendered4 = _.template(template4);
 
 $.getJSON(repo).done( function(i){
 i.forEach(function(x){
-  $('.    ').append(rendered4(x));
+  $('.bars').append(rendered4(x));
 
   })
 });

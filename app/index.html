@@ -122,18 +122,18 @@
   <div class="projectName">gitprofile</div>
   <div class="update">Updated 19 hours ago</div>
 
-  <span class="right">Javascript
+  <!-- <span class="right">Javascript
     <span class="octicon octicon-star">
       0
       <span class="octicon octicon-git-branch">
         0
       </span>
-
+   -->
 
   </span>
 </span>
 </section>
-
+<!--
 <section class="bars">
   <div class="projectName">etsy</div>
   <div class="update">Updated 19 hours ago</div>
@@ -157,7 +157,7 @@
 <section class="bars">
   <div class="projectName">surf-and-paddle</div>
   <div class="update">Updated 1 week ago</div>
-</section>
+</section> -->
 
 </section>
 
@@ -195,6 +195,22 @@
 <img class="org" src= "<%= avatar_url %>" width=42px;/>
 </script>
 
+<script type="text/template" id="repo">
+<div class="projectName"><%= name %></div>
+<div class="update"><%= updated_at %></div>
+
+<span class="right"><%= language%>
+  <span class="octicon octicon-star">
+    <%=stargazers_count%>
+    <span class="octicon octicon-git-branch">
+      <%= forks%>
+    </span>
+
+
+
+
+
+</script>
 
 
 
