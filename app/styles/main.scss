@@ -10,8 +10,6 @@ $icon: HSLA(0, 0%, 80%, 1);
 $blue: HSLA(210, 53%, 51%, 1);
 @mixin font{
   font-family: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-
-
 }
 
 body{
@@ -56,9 +54,8 @@ input{
   float: right;
   @include font;
   margin-right: 147px;
-margin-top: 15px;
-
-position: relative;
+  margin-top: 15px;
+  position: relative;
 
 }
 
