@@ -11,13 +11,14 @@ var starred = 'https://api.github.com/users/chelseafranz/starred';
 // $('.hero-unit').append(rendered(user_data));
 // });
 
+// header////////////////////////////////////////
 var template= $('#top_box').html();
 var rendered = _.template(template);
 $.getJSON(users).done( function(i){
 $('.head_right').prepend(rendered(i));
 });
 
-
+// side bar///////////////////////////////////////
 var template2= $('#side_box').html();
 var rendered2 = _.template(template2);
 
@@ -29,22 +30,21 @@ $('.sidebar').prepend(rendered2(i));
 
 // starred///////////////////////////////
 var template5= $('#star').html();
-console.log(template5);
-
 var rendered5= _.template(template5);
-console.log(rendered5);
+var star_count;
 
-$.getJSON(starred).done(function(a){
-  a.forEach( function(b){
-    $('.zero').append(rendered5(b));
-    console.log(rendered5(b));
-  })
+
+$.getJSON(starred).done(function(starred_data){
+  star_count= starred_data.length;
+  var object ={
+    stargazers_count:star_count
+  };
+    $('.b').append(rendered5(object));
+    console.log(object);
+
 });
 
-// $.getJSON(starred).done( function(i){
-// $('.zero').append(rendered5(i));
-//
-// });
+
 
 
 ////////////////////////////////////////////////
