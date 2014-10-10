@@ -1,3 +1,1 @@
-## Yo, I'm a Readme
-
-You should probably update me so people looking at your code have an idea what it is being used for :)
+This assignment was to recreate your GitHub profile page by pulling live data several separate API's 

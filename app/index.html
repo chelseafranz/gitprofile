@@ -30,24 +30,36 @@
     <input class="top_search" type="text" value="Search GitHub">
     </div>
       <div class="top_nav">
-      <span class="explore">Explore</span>
-      <span class="explore">Gist</span>
-      <span class="explore">Blog</span>
-      <span class="explore">Help</span>
+  <a class ="links" href="https://github.com/explore">Explore</a>
+  <a class ="links" href ="https://gist.github.com">Gist</a>
+  <a class ="links" href ="https://blog.github.com">Blog</a>
+  <a class ="links" href ="https://explore.github.com">Explore</a>
+  <a class ="links" href ="https://help.github.com">Help</a>
     </div>
 
   <div class="head_right">
     <span class="two_icons">
+
         <span class="octicon octicon-plus"></span></span>
+
         <span class="two_icons">
+
         <span class="octicon octicon-triangle-down"></span></span>
+
+      <a href="https://github.com/notifications">
         <span class="regular">
         <span class="octicon octicon-inbox"></span></span>
+      </a>
+      <a href="https://github.com/settings">
         <span class="regular">
         <span class="octicon octicon-gear"></span></span>
+      </a>
+      <a href="https://github.com/signout">
         <span class="regular">
         <span class="octicon octicon-sign-out"></span>
       </span>
+    </a>
+
 
   </div>
 </header>
@@ -57,13 +69,10 @@
 <!-- start of sidebar -->
 <aside class="sidebar">
 
+<li class="star"></li>
+
 <div>
-
-
-
-
-
-  <span class="followers">
+<span class="followers">
     <span class="follow">Followers</span>
     <span class="follow">Starred</span>
     <span class="follow">Following</span>
@@ -92,36 +101,53 @@
     <span class="b3">
       <span class="octicon octicon-rss"></span>
       <span class="public">Public Activity</span>
+    <a href="https://github.com/account">
       <button class="edit_profile">
         <span class="octicon octicon-pencil"></span>
         Edit Profile
       </button>
     </span>
+  </a>
   </div>
   <!-- end of top half -->
 
-  <!-- bottom half -->
+  <!-- bottom half of repos search section -->
 <div class="bottom_half">
   <input class="bottom_search" type="text" value="Find a repository...">
   <button class="search1">Search</button>
   <span class="things">
+    <a href="https://github.com/repositories/all">
      <span class="all">All</span>
+   </a>
+   <a href="https://github.com/repositories/public">
      <span class="items">Public</span>
+   </a>
+   <a href="https://github.com/repositories/private">
      <span class="items">Private</span>
+   </a>
+   <a href="https://github.com/repositories/sources">
      <span class="items">Sources</span>
+   </a>
+   <a href="https://github.com/repositories/forks">
      <span class="items">Forks</span>
+   </a>
+   <a href="https://github.com/repositories/mirrors">
      <span class="items">Mirrors</span>
+   </a>
+
+    <a href="https://github.com/repositories/new">
      <button class="search2"><span class="octicon octicon-repo"></span>
      New</button>
   </span>
+</a>
 </div>
-<!-- end of bottom haf of body top -->
+<!-- end of bottom half of body top -->
 
 <!-- beginning of projects section -->
-<section class="bars">
-  <div class="projectName">gitprofile</div>
-  <div class="update">Updated 19 hours ago</div>
-
+<section class="bars2">
+  <!-- <div class="projectName"></div>
+  <div class="update"></div>
+   -->
   <!-- <span class="right">Javascript
     <span class="octicon octicon-star">
       0
@@ -130,8 +156,7 @@
       </span>
    -->
 
-  </span>
-</span>
+
 </section>
 <!--
 <section class="bars">
@@ -172,32 +197,40 @@
 <!-- side bar -->
 <script type="text/template" id="side_box">
   <img class="me" src= "<%= avatar_url %>" />
-  <h1 class="name"><%= name %></h1>
 
-  <h2 class="login"> <%= login %> </h2>
+  <div class="names">
+    <h1 class="name"><%= name %></h1>
+    <h2 class="login"> <%= login %> </h2>
+  </div>
 
   <div class="location"><span class="octicon octicon-location"></span><%= location %></div>
 
   <div class="mail"><span class="octicon octicon-mail"></span></span><%= email %></div>
 
-  <div class="joined"><span class="octicon octicon-clock"></span><%=created_at%></div>
+  <div class="joined"><span class="octicon octicon-clock"></span>Joined on September 22. 2014</div>
 
 <ul class="zero">
   <li class="a"><%= followers %></li>
-  <li class="b"><%= public_gists %></li>
+<!--   <li class="b"><%= public_gists%></li> -->
   <li class="c"><%= following %></li>
 </ul>
-
-
 </script>
 
+<!-- Organizations badges -->
 <script type="text/template" id="org_img">
 <img class="org" src= "<%= avatar_url %>" width=42px;/>
 </script>
 
+
+<!-- main repos section -->
 <script type="text/template" id="repo">
+<div class="bars">
+
+<a href='https://github.com/chelseafranz/<%=name%>' >
 <div class="projectName"><%= name %></div>
+</a>
 <div class="update"><%= updated_at %></div>
+
 
 <span class="right"><%= language%>
   <span class="octicon octicon-star">
@@ -205,13 +238,16 @@
     <span class="octicon octicon-git-branch">
       <%= forks%>
     </span>
-
-
-
-
+</div>
 
 </script>
 
+
+
+<!-- star script -->
+<script type="text/template" id="star">
+<li> <%=stargazers_count%> </li>
+</script>
 
 
 
@@ -243,8 +279,6 @@
         <span class="l">Secutity</span>
         <span class="l">Contact</span>
       </span>
-
-
 
       <span class="bottom_right">
         <span class="r">Status</span>
