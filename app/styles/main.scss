@@ -171,9 +171,20 @@ li{
 }
 .a{
   margin-left: -9px;
+  position: relative;
 }
 .b{
   margin-left: 8px;
+  display: inline-block;
+}
+.star_count{
+  position: absolute;
+  top: 449px;
+  color: $blue;
+  left: 241px;
+}
+.list{
+  margin-right: 73px;
 }
 .c{
   margin-left: 2px;

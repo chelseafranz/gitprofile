@@ -70,9 +70,7 @@
 <aside class="sidebar">
 
 <li class="star"></li>
-<li class="a"></li>
 <li class="b"></li>
-<li class="c"></li>
 
 <span class="followers">
 
@@ -210,9 +208,9 @@
   <div class="joined"><span class="octicon octicon-clock"></span>Joined on September 22. 2014</div>
 
 <ul class="zero">
-  <li class="a"><%= followers %></li>
+  <li class="list"><%= followers %></li>
 
-  <li class="c"><%= following %></li>
+  <li class="list"><%= following %></li>
 </ul>
 </script>
 
@@ -246,7 +244,7 @@
 
 <!-- star script -->
 <script type="text/template" id="star">
-<li> <%=stargazers_count%> </li>
+<span class="star_count"> <%=stargazers_count%> </span>
 </script>
 
 
