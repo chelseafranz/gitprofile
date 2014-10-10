@@ -33,23 +33,18 @@ console.log(template5);
 
 var rendered5= _.template(template5);
 console.log(rendered5);
-var starCount = rendered5.length;
-
 
 $.getJSON(starred).done(function(a){
   a.forEach( function(b){
     $('.zero').append(rendered5(b));
     console.log(rendered5(b));
-    console.log(starCount);
-
   })
 });
-// var stars=rendered5.length;
+
+// $.getJSON(starred).done( function(i){
+// $('.zero').append(rendered5(i));
 //
-// $.getJSON(starred).done( function(s){
-// $('.zero').append(rendered5(s));
 // });
-// console.log(stars);
 
 
 ////////////////////////////////////////////////
@@ -67,7 +62,6 @@ i.forEach(function(x){
 
 var template4= $('#repo').html();
 var rendered4 = _.template(template4);
-
 
 $.getJSON(repo).done( function(i){
 i.forEach(function(x){
