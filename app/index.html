@@ -73,10 +73,12 @@
 <li class="b"></li>
 
 <span class="followers">
-
+<span class="followers1">Followers</span>
+<span class="followers1">Starred</span>
+<span class="followers1">Following</span>
   </span>
 
-<p>Organizations</p>
+<p class='org2'>Organizations</p>
 <div class="org"></div>
 
 
@@ -156,33 +158,7 @@
 
 
 </section>
-<!--
-<section class="bars">
-  <div class="projectName">etsy</div>
-  <div class="update">Updated 19 hours ago</div>
-</section>
 
-<section class="bars">
-  <div class="projectName">accord</div>
-  <div class="update">Updated 2 days ago</div>
-</section>
-
-<section class="bars">
-  <div class="projectName">jspractice</div>
-  <div class="update">Updated 3 days ago</div>
-</section>
-
-<section class="bars">
-  <div class="projectName">javascript</div>
-  <div class="update">Updated 1 week ago</div>
-</section>
-
-<section class="bars">
-  <div class="projectName">surf-and-paddle</div>
-  <div class="update">Updated 1 week ago</div>
-</section> -->
-
-</section>
 
 <!-- javascript templates -->
 <!-- top box -->
@@ -203,14 +179,14 @@
 
   <div class="location"><span class="octicon octicon-location"></span><%= location %></div>
 
-  <div class="mail"><span class="octicon octicon-mail"></span></span><%= email %></div>
+  <div class="mail"><span class="octicon octicon-mail"></span></span><a href="chelseafranz.com"><%= email %></a></div>
 
   <div class="joined"><span class="octicon octicon-clock"></span>Joined on September 22. 2014</div>
 
 <ul class="zero">
   <li class="list"><%= followers %></li>
 
-  <li class="list"><%= following %></li>
+  <li class="list2"><%= following %></li>
 </ul>
 </script>
 
@@ -227,7 +203,7 @@
 <a href='https://github.com/chelseafranz/<%=name%>' >
 <div class="projectName"><%= name %></div>
 </a>
-<div class="update"><%= updated_at %></div>
+<div class="update"><%=updated_at%></div>
 
 
 <span class="right"><%= language%>
@@ -264,6 +240,7 @@
     <!-- endbuild -->
 <script src="scripts/token.js"></script>
         <!-- build:js scripts/main.js -->
+        <script src="scripts/date.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>

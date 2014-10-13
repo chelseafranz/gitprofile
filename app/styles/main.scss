@@ -128,63 +128,68 @@ h1{
   font-weight: 500;
 }
 h2{
-  font-weight: 100;
+  font-weight: 200;
   margin-top: -24px;
 }
 .location {
-  font-weight: 200;
+
   font-size: .9em;
   color: HSLA(0, 0%, 20%, 1);
+  margin-top:30px;
+  color: HSLA(0, 0%, 80%, 1);
 }
 .mail{
-  font-weight: 200;
+
   font-size: .9em;
   color: HSLA(0, 0%, 20%, 1);
+  text-decoration: none;
+  color: HSLA(0, 0%, 80%, 1);
 
 }
 .joined{
-  font-weight: 200;
+
   font-size: .9em;
-  color: HSLA(0, 0%, 20%, 1);
+  color: HSLA(0, 0%, 80%, 1)
+
 }
 
 .octicon-location{
   color: $icon;
+  margin-right: 5px;
 }
 .octicon-mail{
   color: $icon;
+  margin-right: 5px;
 }
 .octicon-clock{
   color: $icon;
+  margin-right: 5px;
 }
 
 .zero{
   color: $blue;
   list-style-type: none;
-  margin-bottom: 0px;
+  margin-bottom: -9px;
 }
 li{
   display: inline-block;
   font-size: 1.7em;
   font-weight: bold;
-  margin-right: 43px;
+
 }
-.a{
-  margin-left: -9px;
-  position: relative;
-}
-.b{
-  margin-left: 8px;
-  display: inline-block;
-}
+
 .star_count{
   position: absolute;
-  top: 449px;
+  top: 478px;
   color: $blue;
-  left: 241px;
+  left: 250px;
 }
 .list{
-  margin-right: 73px;
+  margin-right: 140px;
+margin-left: -14px;
+}
+.list2{
+  margin-left:-12px;
 }
 .c{
   margin-left: 2px;
@@ -199,13 +204,22 @@ li{
 }
 .followers{
   border-bottom: solid 1px $border;
+  display: inline-block;
+}
+.followers1{
+  font-size: 12px;
+  margin-right: 16px;
+  margin-left: 8px;
 }
 
 .org{
-  font-size: 1.2em;
+
   font-weight: bold;
   border-top: solid 1 px $border;
 
+}
+.org2{
+  font-weight: bold;
 }
 .tiy{
   height:40px;
@@ -312,6 +326,10 @@ padding-left: 10px;
   font-size: 12px;
   color: white;
 }
+
+a{
+  text-decoration: none;
+}
 /* repo display *//////////////////////////////////
 .bars{
   height: 135px;
@@ -319,8 +337,9 @@ padding-left: 10px;
   border-top: solid 1px $border;
 }
 .projectName{
-  color: $blue;
+  color: HSLA(210, 53%, 51%, 1);
   font-weight: 600;
+  margin-bottom: 20px;
   font-size: 20px;
   width: 300px;
   display: inline-block;
@@ -333,6 +352,7 @@ padding-left: 10px;
 .update{
   color: gray;
   width: 300px;
+  font-weight: 200;
 
 
 }
