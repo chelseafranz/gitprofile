@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="styles/main.css">
 
     <script src="scripts/vendor/modernizr.js"></script>
+    <script src="../bower_components/moment/moment.js"></script>
+    <!-- endbuild -->
   </head>
   <body>
 
@@ -22,27 +24,36 @@
     <input class="top_search" type="text" value="Search GitHub">
     </div>
       <div class="top_nav">
-      <span class="explore">Explore</span>
-      <span class="explore">Gist</span>
-      <span class="explore">Blog</span>
-      <span class="explore">Help</span>
+  <a class ="links" href="https://github.com/explore">Explore</a>
+  <a class ="links" href ="https://gist.github.com">Gist</a>
+  <a class ="links" href ="https://blog.github.com">Blog</a>
+  <a class ="links" href ="https://explore.github.com">Explore</a>
+  <a class ="links" href ="https://help.github.com">Help</a>
     </div>
 
   <div class="head_right">
-    <!-- <img class="little_me" src="https://s3.amazonaws.com/uploads.hipchat.com/31349/1240363/w7PlM8eDurZEBbk/upload.png" > -->
+    <span class="two_icons">
 
-      <!-- <span class="username">chelseafranz</span> -->
-  <span class="two_icons">
-      <span class="octicon octicon-plus"></span></span>
-      <span class="two_icons">
-      <span class="octicon octicon-triangle-down"></span></span>
-      <span class="regular">
-      <span class="octicon octicon-inbox"></span></span>
-      <span class="regular">
-      <span class="octicon octicon-gear"></span></span>
-      <span class="regular">
-      <span class="octicon octicon-sign-out"></span>
-    </span>
+        <span class="octicon octicon-plus"></span></span>
+
+        <span class="two_icons">
+
+        <span class="octicon octicon-triangle-down"></span></span>
+
+      <a href="https://github.com/notifications">
+        <span class="regular">
+        <span class="octicon octicon-inbox"></span></span>
+      </a>
+      <a href="https://github.com/settings">
+        <span class="regular">
+        <span class="octicon octicon-gear"></span></span>
+      </a>
+      <a href="https://github.com/signout">
+        <span class="regular">
+        <span class="octicon octicon-sign-out"></span>
+      </span>
+    </a>
+
 
   </div>
 </header>
@@ -51,40 +62,19 @@
 
 <!-- start of sidebar -->
 <aside class="sidebar">
-  <!-- <img class="me" src="https://s3.amazonaws.com/uploads.hipchat.com/31349/1240363/w7PlM8eDurZEBbk/upload.png" > -->
-  <!-- <h1 class="name">Chelsea Franz</h1> -->
-  <!-- <h2 class="login">chelseafranz</h2> -->
-  <hr></hr>
-<div>
-  <span class="octicon octicon-location"></span>
-  <!-- <span class="location">United States</span> -->
-</div>
-<div>
-  <span class="octicon octicon-mail"></span>
-  <a href='chelseafranz.com'>
-  <!-- <span class="mail">chelseafranz3@gmail.com</span> -->
-</a>
-</div>
-<div>
-  <span class="octicon octicon-clock"></span>
-  <!-- <span class="joined">Joined on September 22, 2014</span> -->
-</div>
-<hr></hr>
-  <!-- <ul class="zero"> -->
-    <!-- <li class="a">0</li>
-    <li class="b">0</li>
-    <li class="c">0</li> -->
-  </ul>
 
-  <span class="followers">
-    <span class="follow">Followers</span>
-    <span class="follow">Starred</span>
-    <span class="follow">Following</span>
+<li class="star"></li>
+<li class="b"></li>
+
+<span class="followers">
+<span class="followers1">Followers</span>
+<span class="followers1">Starred</span>
+<span class="followers1">Following</span>
   </span>
-<hr></hr>
 
-<div class="org">Organizations</div>
-<img class="tiy" src="https://avatars0.githubusercontent.com/u/7996991?v=2&s=200">
+<p class='org2'>Organizations</p>
+<div class="org"></div>
+
 
 </aside>
 <!-- end of sidebar -->
@@ -105,74 +95,64 @@
     <span class="b3">
       <span class="octicon octicon-rss"></span>
       <span class="public">Public Activity</span>
+    <a href="https://github.com/account">
       <button class="edit_profile">
         <span class="octicon octicon-pencil"></span>
         Edit Profile
       </button>
     </span>
+  </a>
   </div>
   <!-- end of top half -->
 
-  <!-- bottom half -->
+  <!-- bottom half of repos search section -->
 <div class="bottom_half">
   <input class="bottom_search" type="text" value="Find a repository...">
   <button class="search1">Search</button>
   <span class="things">
+    <a href="https://github.com/repositories/all">
      <span class="all">All</span>
+   </a>
+   <a href="https://github.com/repositories/public">
      <span class="items">Public</span>
+   </a>
+   <a href="https://github.com/repositories/private">
      <span class="items">Private</span>
+   </a>
+   <a href="https://github.com/repositories/sources">
      <span class="items">Sources</span>
+   </a>
+   <a href="https://github.com/repositories/forks">
      <span class="items">Forks</span>
+   </a>
+   <a href="https://github.com/repositories/mirrors">
      <span class="items">Mirrors</span>
+   </a>
+
+    <a href="https://github.com/repositories/new">
      <button class="search2"><span class="octicon octicon-repo"></span>
      New</button>
   </span>
+</a>
 </div>
-<!-- end of bottom haf of body top -->
+<!-- end of bottom half of body top -->
 
 <!-- beginning of projects section -->
-<section class="bars">
-  <div class="projectName">gitprofile</div>
-  <div class="update">Updated 19 hours ago</div>
-
-  <span class="right">Javascript
+<section class="bars2">
+  <!-- <div class="projectName"></div>
+  <div class="update"></div>
+   -->
+  <!-- <span class="right">Javascript
     <span class="octicon octicon-star">
       0
       <span class="octicon octicon-git-branch">
         0
       </span>
+   -->
 
 
-  </span>
-</span>
 </section>
 
-<section class="bars">
-  <div class="projectName">etsy</div>
-  <div class="update">Updated 19 hours ago</div>
-</section>
-
-<section class="bars">
-  <div class="projectName">accord</div>
-  <div class="update">Updated 2 days ago</div>
-</section>
-
-<section class="bars">
-  <div class="projectName">jspractice</div>
-  <div class="update">Updated 3 days ago</div>
-</section>
-
-<section class="bars">
-  <div class="projectName">javascript</div>
-  <div class="update">Updated 1 week ago</div>
-</section>
-
-<section class="bars">
-  <div class="projectName">surf-and-paddle</div>
-  <div class="update">Updated 1 week ago</div>
-</section>
-
-</section>
 
 <!-- javascript templates -->
 <!-- top box -->
@@ -185,22 +165,57 @@
 <!-- side bar -->
 <script type="text/template" id="side_box">
   <img class="me" src= "<%= avatar_url %>" />
-  <h1 class="name"><%= name %></h1>
-  <h2 class="login"> <%= login %> </h2>
-  <span class="location">United States</span>
-  <span class="mail"><%= email %></span>
-  <span class="joined">Joined on September 22, 2014</span>
+
+  <div class="names">
+    <h1 class="name"><%= name %></h1>
+    <h2 class="login"> <%= login %> </h2>
+  </div>
+
+  <div class="location"><span class="octicon octicon-location"></span><%= location %></div>
+
+  <div class="mail"><span class="octicon octicon-mail"></span></span><a href="chelseafranz.com"><%= email %></a></div>
+
+  <div class="joined"><span class="octicon octicon-clock"></span>Joined on September 22. 2014</div>
+
+<ul class="zero">
+  <li class="list"><%= followers %></li>
+
+  <li class="list2"><%= following %></li>
+</ul>
+</script>
+
+<!-- Organizations badges -->
+<script type="text/template" id="org_img">
+<img class="org" src= "<%= avatar_url %>" width=42px;/>
+</script>
 
 
-  <li class="a"><%= followers %></li>
-  <li class="b"><%= public_gists %></li>
-  <li class="c"><%= following %></li>
+<!-- main repos section -->
+<script type="text/template" id="repo">
+<div class="bars">
 
+<a href='https://github.com/chelseafranz/<%=name%>' >
+<div class="projectName"><%= name %></div>
+</a>
+<div class="update"><%=updated_at%></div>
+
+
+<span class="right"><%= language%>
+  <span class="octicon octicon-star">
+    <%=stargazers_count%>
+    <span class="octicon octicon-git-branch">
+      <%= forks%>
+    </span>
+</div>
 
 </script>
 
 
 
+<!-- star script -->
+<script type="text/template" id="star">
+<span class="star_count"> <%=stargazers_count%> </span>
+</script>
 
 
 
@@ -225,8 +240,6 @@
         <span class="l">Secutity</span>
         <span class="l">Contact</span>
       </span>
-
-
 
       <span class="bottom_right">
         <span class="r">Status</span>
