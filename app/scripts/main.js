@@ -64,6 +64,7 @@ var template4= $('#repo').html();
 var rendered4 = _.template(template4);
 
 $.getJSON(repo).done( function(i){
+  i.updated_at = moment(i.updated_at).fromNow();
 i.forEach(function(x){
   $('.bars2').append(rendered4(x));
 
