@@ -1,1 +1,6 @@
-This assignment was to recreate your GitHub profile page by pulling live data several separate API's 
+##GitHub Profile
+Recreated Github.com profile page, utilizing live data from github's API. 
+
+Libraries used:
+jQuery
+Underscore
